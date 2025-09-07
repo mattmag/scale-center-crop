@@ -1,0 +1,3727 @@
+[
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.9,
+      "resolution": {
+        "width": 1320,
+        "height": 2868
+      },
+      "density": 460
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 16 Pro Max",
+      "yearOfRelease": 2024
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "18.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.3,
+      "resolution": {
+        "width": 1206,
+        "height": 2622
+      },
+      "density": 460
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 16 Pro",
+      "yearOfRelease": 2024
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "18.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.7,
+      "resolution": {
+        "width": 1290,
+        "height": 2796
+      },
+      "density": 460
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 16 Plus",
+      "yearOfRelease": 2024
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "18.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.1,
+      "resolution": {
+        "width": 1179,
+        "height": 2556
+      },
+      "density": 460
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 16",
+      "yearOfRelease": 2024
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "18.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.2,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 416
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy S24",
+      "yearOfRelease": 2024
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "14.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.7,
+      "resolution": {
+        "width": 1290,
+        "height": 2796
+      },
+      "density": 460
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 15 Pro Max",
+      "yearOfRelease": 2023
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "17.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.1,
+      "resolution": {
+        "width": 1179,
+        "height": 2556
+      },
+      "density": 461
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 15 Pro",
+      "yearOfRelease": 2023
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "17.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.7,
+      "resolution": {
+        "width": 1290,
+        "height": 2796
+      },
+      "density": 460
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 15 Plus",
+      "yearOfRelease": 2023
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "17.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.1,
+      "resolution": {
+        "width": 1179,
+        "height": 2556
+      },
+      "density": 461
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 15",
+      "yearOfRelease": 2023
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "17.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.1,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 425
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy S23",
+      "yearOfRelease": 2023
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "13.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 4.7,
+      "resolution": {
+        "width": 750,
+        "height": 1334
+      },
+      "density": 326
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone SE",
+      "yearOfRelease": 2022
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "15.4",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.7,
+      "resolution": {
+        "width": 1290,
+        "height": 2796
+      },
+      "density": 460
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 14 Pro Max",
+      "yearOfRelease": 2022
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "16.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.7,
+      "resolution": {
+        "width": 1284,
+        "height": 2778
+      },
+      "density": 458
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 14 Plus",
+      "yearOfRelease": 2022
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "16.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.1,
+      "resolution": {
+        "width": 1179,
+        "height": 2556
+      },
+      "density": 460
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 14 Pro",
+      "yearOfRelease": 2022
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "16.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.1,
+      "resolution": {
+        "width": 1170,
+        "height": 2532
+      },
+      "density": 460
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 14",
+      "yearOfRelease": 2022
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "16.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.7,
+      "resolution": {
+        "width": 1440,
+        "height": 3216
+      },
+      "density": 525
+    },
+    "modelInfo": {
+      "brand": "OnePlus",
+      "modelName": "10 Pro",
+      "yearOfRelease": 2022
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "12.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.7,
+      "resolution": {
+        "width": 1284,
+        "height": 2778
+      },
+      "density": 458
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 13 Pro Max",
+      "yearOfRelease": 2021
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "15.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.4,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 476
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 13 mini",
+      "yearOfRelease": 2021
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "15.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.1,
+      "resolution": {
+        "width": 1170,
+        "height": 2532
+      },
+      "density": 460
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 13 Pro",
+      "yearOfRelease": 2021
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "15.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.1,
+      "resolution": {
+        "width": 1170,
+        "height": 2532
+      },
+      "density": 460
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 13",
+      "yearOfRelease": 2021
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "15.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.43,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 409
+    },
+    "modelInfo": {
+      "brand": "OnePlus",
+      "modelName": "Nord 2",
+      "yearOfRelease": 2021
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "11.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.7,
+      "resolution": {
+        "width": 1440,
+        "height": 3216
+      },
+      "density": 525
+    },
+    "modelInfo": {
+      "brand": "OnePlus",
+      "modelName": "9 Pro",
+      "yearOfRelease": 2021
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "11.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.55,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 402
+    },
+    "modelInfo": {
+      "brand": "OnePlus",
+      "modelName": "9",
+      "yearOfRelease": 2021
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "11.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.4,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 411
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy A32",
+      "yearOfRelease": 2021
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "11.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.8,
+      "resolution": {
+        "width": 1440,
+        "height": 3200
+      },
+      "density": 515
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy S21 Ultra",
+      "yearOfRelease": 2021
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "11.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.7,
+      "resolution": {
+        "width": 1284,
+        "height": 2778
+      },
+      "density": 458
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 12 Pro Max",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "14.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.4,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 476
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 12 mini",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "14.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.1,
+      "resolution": {
+        "width": 1170,
+        "height": 2532
+      },
+      "density": 460
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 12 Pro",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "14.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.1,
+      "resolution": {
+        "width": 1170,
+        "height": 2532
+      },
+      "density": 460
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 12",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "14.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.55,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 402
+    },
+    "modelInfo": {
+      "brand": "OnePlus",
+      "modelName": "8T",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "11.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 432
+    },
+    "modelInfo": {
+      "brand": "Google",
+      "modelName": "Pixel 5",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "11.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.5,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 407
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy S20 FE",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 7.6,
+      "resolution": {
+        "width": 1768,
+        "height": 2208
+      },
+      "density": 373
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy Z Fold2",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.4,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 411
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy A31",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.44,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 408
+    },
+    "modelInfo": {
+      "brand": "OnePlus",
+      "modelName": "Nord",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.9,
+      "resolution": {
+        "width": 1440,
+        "height": 3088
+      },
+      "density": 496
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy Note20 Ultra",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.7,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 393
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy Note20",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.7,
+      "resolution": {
+        "width": 1080,
+        "height": 2636
+      },
+      "density": 425
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy Z Flip",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.9,
+      "resolution": {
+        "width": 1440,
+        "height": 3200
+      },
+      "density": 511
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy S20 Ultra",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.7,
+      "resolution": {
+        "width": 1440,
+        "height": 3200
+      },
+      "density": 525
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy S20+",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.4,
+      "resolution": {
+        "width": 1440,
+        "height": 3200
+      },
+      "density": 563
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy S20",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 4.7,
+      "resolution": {
+        "width": 750,
+        "height": 1334
+      },
+      "density": 326
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone SE",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "13.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.81,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 443
+    },
+    "modelInfo": {
+      "brand": "Google",
+      "modelName": "Pixel 4a",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.51,
+      "resolution": {
+        "width": 720,
+        "height": 1600
+      },
+      "density": 270
+    },
+    "modelInfo": {
+      "brand": "vivo",
+      "modelName": "Y20",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.67,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 395
+    },
+    "modelInfo": {
+      "brand": "Xiaomi",
+      "modelName": "Mi 10T Pro 5G",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.67,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 386
+    },
+    "modelInfo": {
+      "brand": "Xiaomi",
+      "modelName": "Mi 10 5G",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.7,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 394
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy S10 Lite",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.4,
+      "resolution": {
+        "width": 1080,
+        "height": 2310
+      },
+      "density": 398
+    },
+    "modelInfo": {
+      "brand": "Huawei",
+      "modelName": "Nova 7i",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.78,
+      "resolution": {
+        "width": 1440,
+        "height": 3168
+      },
+      "density": 513
+    },
+    "modelInfo": {
+      "brand": "OnePlus",
+      "modelName": "8 Pro",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.55,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 402
+    },
+    "modelInfo": {
+      "brand": "OnePlus",
+      "modelName": "8",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.67,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 395
+    },
+    "modelInfo": {
+      "brand": "Redmi",
+      "modelName": "Note 9 Pro",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.7,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 393
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy A71",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.5,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 405
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy A51",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 7.3,
+      "resolution": {
+        "width": 1536,
+        "height": 2152
+      },
+      "density": 362
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy Fold",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.47,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 398
+    },
+    "modelInfo": {
+      "brand": "Xiaomi",
+      "modelName": "Mi Note 10",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.7,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 393
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy A70s",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.4,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 403
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy A50s",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.39,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 403
+    },
+    "modelInfo": {
+      "brand": "Xiaomi-Mi",
+      "modelName": "9T Pro",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.39,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 403
+    },
+    "modelInfo": {
+      "brand": "Xiaomi-Mi",
+      "modelName": "9",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.59,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 391
+    },
+    "modelInfo": {
+      "brand": "Huawei",
+      "modelName": "Y9s",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.4,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 403
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy A30",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.55,
+      "resolution": {
+        "width": 1080,
+        "height": 2400
+      },
+      "density": 402
+    },
+    "modelInfo": {
+      "brand": "OnePlus",
+      "modelName": "7T",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.3,
+      "resolution": {
+        "width": 1440,
+        "height": 3040
+      },
+      "density": 537
+    },
+    "modelInfo": {
+      "brand": "Google",
+      "modelName": "Pixel 4 XL",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.7,
+      "resolution": {
+        "width": 1080,
+        "height": 2280
+      },
+      "density": 444
+    },
+    "modelInfo": {
+      "brand": "Google",
+      "modelName": "Pixel 4",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.5,
+      "resolution": {
+        "width": 1242,
+        "height": 2688
+      },
+      "density": 458
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 11 Pro Max",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "13.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.8,
+      "resolution": {
+        "width": 1125,
+        "height": 2436
+      },
+      "density": 458
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 11 Pro",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "13.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.1,
+      "resolution": {
+        "width": 828,
+        "height": 1792
+      },
+      "density": 326
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 11",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "13.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.53,
+      "resolution": {
+        "width": 1176,
+        "height": 2400
+      },
+      "density": 409
+    },
+    "modelInfo": {
+      "brand": "Huawei",
+      "modelName": "Mate 30 Pro",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.62,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 389
+    },
+    "modelInfo": {
+      "brand": "Huawei",
+      "modelName": "Mate 30",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "10.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.53,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 395
+    },
+    "modelInfo": {
+      "brand": "Xiaomi",
+      "modelName": "Redmi Note 8 Pro",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.8,
+      "resolution": {
+        "width": 1440,
+        "height": 3040
+      },
+      "density": 498
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Note10+",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.3,
+      "resolution": {
+        "width": 1080,
+        "height": 2280
+      },
+      "density": 401
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Note10",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.3,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 409
+    },
+    "modelInfo": {
+      "brand": "Xiaomi",
+      "modelName": "Redmi Note 8",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.3,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 409
+    },
+    "modelInfo": {
+      "brand": "Xiaomi",
+      "modelName": "Redmi Note 7",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.59,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 391
+    },
+    "modelInfo": {
+      "brand": "Huawei",
+      "modelName": "Y9 Prime",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.59,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 391
+    },
+    "modelInfo": {
+      "brand": "Honor",
+      "modelName": "9X",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6,
+      "resolution": {
+        "width": 1080,
+        "height": 2160
+      },
+      "density": 402
+    },
+    "modelInfo": {
+      "brand": "Google",
+      "modelName": "Pixel 3a XL",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.6,
+      "resolution": {
+        "width": 1080,
+        "height": 2220
+      },
+      "density": 441
+    },
+    "modelInfo": {
+      "brand": "Google",
+      "modelName": "Pixel 3a",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.67,
+      "resolution": {
+        "width": 1440,
+        "height": 3120
+      },
+      "density": 516
+    },
+    "modelInfo": {
+      "brand": "OnePlus",
+      "modelName": "7 Pro",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.4,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 403
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "A50",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.41,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 402
+    },
+    "modelInfo": {
+      "brand": "OnePlus",
+      "modelName": "7",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.4,
+      "resolution": {
+        "width": 1440,
+        "height": 3040
+      },
+      "density": 522
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy S10+",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.1,
+      "resolution": {
+        "width": 1440,
+        "height": 3040
+      },
+      "density": 550
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy S10",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 4,
+      "resolution": {
+        "width": 640,
+        "height": 1136
+      },
+      "density": 326
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone SE",
+      "yearOfRelease": 2016
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "9.3.2",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.3,
+      "resolution": {
+        "width": 1440,
+        "height": 2960
+      },
+      "density": 523
+    },
+    "modelInfo": {
+      "brand": "Google",
+      "modelName": "Pixel 3 XL",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.5,
+      "resolution": {
+        "width": 1080,
+        "height": 2160
+      },
+      "density": 443
+    },
+    "modelInfo": {
+      "brand": "Google",
+      "modelName": "Pixel 3",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.5,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 397
+    },
+    "modelInfo": {
+      "brand": "Honor",
+      "modelName": "8X",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "8.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6,
+      "resolution": {
+        "width": 1080,
+        "height": 2160
+      },
+      "density": 402
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy A6s",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "8.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.5,
+      "resolution": {
+        "width": 1242,
+        "height": 2688
+      },
+      "density": 458
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone XS Max",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "12",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.8,
+      "resolution": {
+        "width": 1125,
+        "height": 2436
+      },
+      "density": 458
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone XS",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "12",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.1,
+      "resolution": {
+        "width": 828,
+        "height": 1792
+      },
+      "density": 326
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone XR",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "12",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.41,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 402
+    },
+    "modelInfo": {
+      "brand": "OnePlus",
+      "modelName": "6T",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.28,
+      "resolution": {
+        "width": 1080,
+        "height": 2280
+      },
+      "density": 402
+    },
+    "modelInfo": {
+      "brand": "OnePlus",
+      "modelName": "6",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "8.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.5,
+      "resolution": {
+        "width": 720,
+        "height": 1280
+      },
+      "density": 267
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy J4",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "8.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5,
+      "resolution": {
+        "width": 720,
+        "height": 1280
+      },
+      "density": 294
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy J5 Prime",
+      "yearOfRelease": 2015
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "6.0.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5,
+      "resolution": {
+        "width": 720,
+        "height": 1280
+      },
+      "density": 294
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy J5",
+      "yearOfRelease": 2015
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "5.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.3,
+      "resolution": {
+        "width": 1080,
+        "height": 2340
+      },
+      "density": 409
+    },
+    "modelInfo": {
+      "brand": "Huawei",
+      "modelName": "Mate 20 Lite",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "8.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.5,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "density": 401
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy J7",
+      "yearOfRelease": 2015
+    },
+    "operatingSystem": {
+      "version": "7.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.39,
+      "resolution": {
+        "width": 1440,
+        "height": 3120
+      },
+      "density": 538
+    },
+    "modelInfo": {
+      "brand": "Huawei",
+      "modelName": "Mate 20 Pro",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "9.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6,
+      "resolution": {
+        "width": 720,
+        "height": 1480
+      },
+      "density": 274
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy J8",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "8.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.6,
+      "resolution": {
+        "width": 720,
+        "height": 1480
+      },
+      "density": 293
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy J6",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "8.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6,
+      "resolution": {
+        "width": 1440,
+        "height": 2880
+      },
+      "density": 538
+    },
+    "modelInfo": {
+      "brand": "Google",
+      "modelName": "Pixel 2 XL",
+      "yearOfRelease": 2017
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "8.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "density": 441
+    },
+    "modelInfo": {
+      "brand": "Google",
+      "modelName": "Pixel 2",
+      "yearOfRelease": 2017
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "8.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.5,
+      "resolution": {
+        "width": 1440,
+        "height": 2560
+      },
+      "density": 534
+    },
+    "modelInfo": {
+      "brand": "Google",
+      "modelName": "Pixel XL",
+      "yearOfRelease": 2016
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "7.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "density": 441
+    },
+    "modelInfo": {
+      "brand": "Google",
+      "modelName": "Pixel",
+      "yearOfRelease": 2016
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "7.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.93,
+      "resolution": {
+        "width": 1080,
+        "height": 2160
+      },
+      "density": 407
+    },
+    "modelInfo": {
+      "brand": "Honor",
+      "modelName": "7X",
+      "yearOfRelease": 2017
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "7.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.9,
+      "resolution": {
+        "width": 1080,
+        "height": 2160
+      },
+      "density": 409
+    },
+    "modelInfo": {
+      "brand": "Huawei",
+      "modelName": "Mate 10 Lite",
+      "yearOfRelease": 2017
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "7.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.5,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "density": 403
+    },
+    "modelInfo": {
+      "brand": "Honor",
+      "modelName": "6X",
+      "yearOfRelease": 2016
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "6.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6,
+      "resolution": {
+        "width": 720,
+        "height": 1440
+      },
+      "density": 268
+    },
+    "modelInfo": {
+      "brand": "Motorola",
+      "modelName": "Moto E5 Plus",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "8.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.2,
+      "resolution": {
+        "width": 1440,
+        "height": 2960
+      },
+      "density": 529
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy S9+",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "8.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.8,
+      "resolution": {
+        "width": 1440,
+        "height": 2960
+      },
+      "density": 570
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy S9",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "8.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.8,
+      "resolution": {
+        "width": 1125,
+        "height": 2436
+      },
+      "density": 458
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone X",
+      "yearOfRelease": 2017
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "11.1.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 4.7,
+      "resolution": {
+        "width": 750,
+        "height": 1334
+      },
+      "density": 326
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 8",
+      "yearOfRelease": 2017
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "11",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.5,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "density": 401
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 8 Plus",
+      "yearOfRelease": 2017
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "11",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.5,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "density": 401
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy J7 Prime2",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "7.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.3,
+      "resolution": {
+        "width": 1440,
+        "height": 2960
+      },
+      "density": 521
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy Note 8",
+      "yearOfRelease": 2017
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "7.1.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 6.2,
+      "resolution": {
+        "width": 1440,
+        "height": 2960
+      },
+      "density": 529
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy S8+",
+      "yearOfRelease": 2017
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "7.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.8,
+      "resolution": {
+        "width": 1440,
+        "height": 2960
+      },
+      "density": 570
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy S8",
+      "yearOfRelease": 2017
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "7.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.5,
+      "resolution": {
+        "width": 720,
+        "height": 1280
+      },
+      "density": 267
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy J7",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "6.0.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "density": 441
+    },
+    "modelInfo": {
+      "brand": "Google",
+      "modelName": "Pixel",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "7.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.5,
+      "resolution": {
+        "width": 720,
+        "height": 1280
+      },
+      "density": 267
+    },
+    "modelInfo": {
+      "brand": "HTC",
+      "modelName": "Desire 10 Lifestyle",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "6.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5,
+      "resolution": {
+        "width": 720,
+        "height": 1280
+      },
+      "density": 294
+    },
+    "modelInfo": {
+      "brand": "HTC",
+      "modelName": "Desire 628",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "5.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.2,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "density": 424
+    },
+    "modelInfo": {
+      "brand": "Sony",
+      "modelName": "Xperia XZ",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "6.0.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.3,
+      "resolution": {
+        "width": 1440,
+        "height": 2560
+      },
+      "density": 554
+    },
+    "modelInfo": {
+      "brand": "LG",
+      "modelName": "G5",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "6.0.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.5,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "density": 401
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy On8",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "6.0.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.5,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "density": 401
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "Galaxy J7 Prime",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "6.0.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 4.7,
+      "resolution": {
+        "width": 750,
+        "height": 1334
+      },
+      "density": 326
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 7",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "10.0.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.5,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "density": 401
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 7 Plus",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "10.0.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.5,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "density": 401
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 6s Plus",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "9",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "density": 441
+    },
+    "modelInfo": {
+      "brand": "Sony",
+      "modelName": "Xperia X",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "6.0.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 4.7,
+      "resolution": {
+        "width": 750,
+        "height": 1334
+      },
+      "density": 326
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 6s",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "9",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 4.7,
+      "resolution": {
+        "width": 750,
+        "height": 1334
+      },
+      "density": 326
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 6",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "8",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 4,
+      "resolution": {
+        "width": 640,
+        "height": 1136
+      },
+      "density": 326
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 5s",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "7",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 4,
+      "resolution": {
+        "width": 640,
+        "height": 1136
+      },
+      "density": 326
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 5c",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "7",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 4,
+      "resolution": {
+        "width": 640,
+        "height": 1136
+      },
+      "density": 326
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPhone 5",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "6",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.1,
+      "resolution": {
+        "width": 1440,
+        "height": 2560
+      },
+      "density": 577
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "S7",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "6.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.5,
+      "resolution": {
+        "width": 1440,
+        "height": 2560
+      },
+      "density": 534
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "S7 edge",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "6.0",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.1,
+      "resolution": {
+        "width": 1440,
+        "height": 2560
+      },
+      "density": 577
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "S6",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "5.0.2",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "phone",
+    "display": {
+      "diagonal": 5.1,
+      "resolution": {
+        "width": 1440,
+        "height": 2560
+      },
+      "density": 577
+    },
+    "modelInfo": {
+      "brand": "Samsung",
+      "modelName": "S6 edge",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "5.0.2",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 10.9,
+      "resolution": {
+        "width": 1640,
+        "height": 2360
+      },
+      "density": 264
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad Air 10.9\"",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "version": "14",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 10.2,
+      "resolution": {
+        "width": 1620,
+        "height": 2160
+      },
+      "density": 264
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad 10.2\"",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "version": "14",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 12.9,
+      "resolution": {
+        "width": 2048,
+        "height": 2732
+      },
+      "density": 264
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad Pro 12.9\"",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "version": "13.4",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 11,
+      "resolution": {
+        "width": 1668,
+        "height": 2388
+      },
+      "density": 264
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad Pro 11\"",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "version": "13.4",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 10.2,
+      "resolution": {
+        "width": 1620,
+        "height": 2160
+      },
+      "density": 264
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad 10.2\"",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "version": "13.1.2",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 10.5,
+      "resolution": {
+        "width": 1668,
+        "height": 2224
+      },
+      "density": 264
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad Air 10.5\"",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "version": "13.1.2",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 7.9,
+      "resolution": {
+        "width": 1536,
+        "height": 2048
+      },
+      "density": 324
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad Mini 7.9\"",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "version": "13.1.2",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 12.9,
+      "resolution": {
+        "width": 2048,
+        "height": 2732
+      },
+      "density": 264
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad Pro 12.9\"",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "version": "13.1.2",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 11,
+      "resolution": {
+        "width": 1668,
+        "height": 2388
+      },
+      "density": 264
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad Pro 11\"",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "version": "13.1.2",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 10.5,
+      "resolution": {
+        "width": 1668,
+        "height": 2224
+      },
+      "density": 264
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad Pro 10.5 (2017)",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "11",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 9.7,
+      "resolution": {
+        "width": 1536,
+        "height": 2048
+      },
+      "density": 264
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad Pro 9.7 (2017)",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "10.3",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 12.9,
+      "resolution": {
+        "width": 2048,
+        "height": 2732
+      },
+      "density": 264
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad Pro",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "9",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 10.2,
+      "resolution": {
+        "width": 2560,
+        "height": 1800
+      },
+      "density": 308
+    },
+    "modelInfo": {
+      "brand": "Google",
+      "modelName": "Pixel C (2015)",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "android",
+      "version": "6.0.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 9.7,
+      "resolution": {
+        "width": 1536,
+        "height": 2048
+      },
+      "density": 264
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad Pro 9.7",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "9.3.2",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 9.7,
+      "resolution": {
+        "width": 1536,
+        "height": 2048
+      },
+      "density": 264
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad Air 2",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "8.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 7.9,
+      "resolution": {
+        "width": 1536,
+        "height": 2048
+      },
+      "density": 324
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad mini 4",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "8.1",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 9.7,
+      "resolution": {
+        "width": 1536,
+        "height": 2048
+      },
+      "density": 264
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad Air",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "7",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "tablet",
+    "display": {
+      "diagonal": 7.9,
+      "resolution": {
+        "width": 1536,
+        "height": 2048
+      },
+      "density": 324
+    },
+    "modelInfo": {
+      "brand": "Apple",
+      "modelName": "iPad mini 3",
+      "yearOfRelease": null
+    },
+    "operatingSystem": {
+      "name": "ios",
+      "version": "9",
+      "versionNickname": null
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 13.3,
+      "resolution": {
+        "width": 2560,
+        "height": 1600
+      },
+      "density": 227
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Air 13\"",
+      "yearOfRelease": 2020
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.15",
+      "versionNickname": "Catalina"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 16,
+      "resolution": {
+        "width": 3072,
+        "height": 1920
+      },
+      "density": 226
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Pro 16\"",
+      "yearOfRelease": 2019
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.15",
+      "versionNickname": "Catalina"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 13.3,
+      "resolution": {
+        "width": 2560,
+        "height": 1600
+      },
+      "density": 227
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Air 13\"",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.14",
+      "versionNickname": "Mojave"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 15.4,
+      "resolution": {
+        "width": 2880,
+        "height": 1800
+      },
+      "density": 220
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Pro 15\"",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.14",
+      "versionNickname": "Mojave"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 13.3,
+      "resolution": {
+        "width": 2560,
+        "height": 1600
+      },
+      "density": 227
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Pro 13\"",
+      "yearOfRelease": 2018
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.14",
+      "versionNickname": "Mojave"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 13.3,
+      "resolution": {
+        "width": 1440,
+        "height": 900
+      },
+      "density": 128
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Air 13\"",
+      "yearOfRelease": 2017
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.14",
+      "versionNickname": "Mojave"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 12,
+      "resolution": {
+        "width": 2304,
+        "height": 1440
+      },
+      "density": 226
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "12\"",
+      "yearOfRelease": 2017
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.12",
+      "versionNickname": "Sierra"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 15.4,
+      "resolution": {
+        "width": 2880,
+        "height": 1800
+      },
+      "density": 220
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Pro 15\"",
+      "yearOfRelease": 2017
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.12",
+      "versionNickname": "Sierra"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 13.4,
+      "resolution": {
+        "width": 2560,
+        "height": 1600
+      },
+      "density": 227
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Pro 13\"",
+      "yearOfRelease": 2017
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.12",
+      "versionNickname": "Sierra"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 12,
+      "resolution": {
+        "width": 2304,
+        "height": 1440
+      },
+      "density": 226
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "12\"",
+      "yearOfRelease": 2016
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.12",
+      "versionNickname": "Sierra"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 15.4,
+      "resolution": {
+        "width": 2880,
+        "height": 1800
+      },
+      "density": 220
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Pro 15\"",
+      "yearOfRelease": 2016
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.12",
+      "versionNickname": "Sierra"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 13.4,
+      "resolution": {
+        "width": 2560,
+        "height": 1600
+      },
+      "density": 227
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Pro 13\"",
+      "yearOfRelease": 2016
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.12",
+      "versionNickname": "Sierra"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 13.3,
+      "resolution": {
+        "width": 1440,
+        "height": 900
+      },
+      "density": 128
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Air 13\"",
+      "yearOfRelease": 2015
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.12",
+      "versionNickname": "Sierra"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 11.6,
+      "resolution": {
+        "width": 1366,
+        "height": 768
+      },
+      "density": 135
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Air 11\"",
+      "yearOfRelease": 2015
+    },
+    "operatingSystem": {
+      "version": "10.11",
+      "versionNickname": "El Capitan"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 12,
+      "resolution": {
+        "width": 2304,
+        "height": 1440
+      },
+      "density": 226
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "12\"",
+      "yearOfRelease": 2015
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.12",
+      "versionNickname": "Sierra"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 15.4,
+      "resolution": {
+        "width": 2880,
+        "height": 1800
+      },
+      "density": 220
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Pro 15\"",
+      "yearOfRelease": 2015
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.12",
+      "versionNickname": "Sierra"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 13.4,
+      "resolution": {
+        "width": 2560,
+        "height": 1600
+      },
+      "density": 227
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Pro 13\"",
+      "yearOfRelease": 2015
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.12",
+      "versionNickname": "Sierra"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 13.3,
+      "resolution": {
+        "width": 1440,
+        "height": 900
+      },
+      "density": 128
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Air 13\"",
+      "yearOfRelease": 2014
+    },
+    "operatingSystem": {
+      "version": "10.9",
+      "versionNickname": "Mavericks"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 11.6,
+      "resolution": {
+        "width": 1366,
+        "height": 768
+      },
+      "density": 135
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Air 11\"",
+      "yearOfRelease": 2014
+    },
+    "operatingSystem": {
+      "version": "10.9",
+      "versionNickname": "Mavericks"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 15.4,
+      "resolution": {
+        "width": 2880,
+        "height": 1800
+      },
+      "density": 220
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Pro 15\"",
+      "yearOfRelease": 2014
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.12",
+      "versionNickname": "Sierra"
+    }
+  },
+  {
+    "deviceClass": "pc",
+    "display": {
+      "diagonal": 13.4,
+      "resolution": {
+        "width": 2560,
+        "height": 1600
+      },
+      "density": 227
+    },
+    "modelInfo": {
+      "brand": "MacBook",
+      "modelName": "Pro 13\"",
+      "yearOfRelease": 2014
+    },
+    "operatingSystem": {
+      "name": "macos",
+      "version": "10.12",
+      "versionNickname": "Sierra"
+    }
+  }
+]
