@@ -7,8 +7,8 @@ import type {
   FilterFactories,
   FilterInstanceBase,
   Predicate
-} from "./filterBase";
-import { builtinFilterFactories } from "@filtering/filters.ts";
+} from "./filterTypes.ts";
+import { builtinFilterFactories } from "@filtering/filterFactories.ts";
 
 
 export interface Filters<TItem> {
@@ -16,8 +16,8 @@ export interface Filters<TItem> {
 }
 
 export function buildFilters<TItem>(
-  itemsSourceAtom: AtomOf<TItem[]>,
   definitions: FilterDefinitionBase<TItem, unknown>[],
+  itemsSourceAtom: AtomOf<TItem[]>,
   factories: FilterFactories = builtinFilterFactories 
 ) {
   const filterInstances: FilterInstanceBase<TItem, unknown, unknown>[] = [];

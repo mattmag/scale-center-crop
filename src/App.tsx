@@ -2,15 +2,16 @@
 
 import './App.css'
 import '@mantine/core/styles.css';
-import {Center, MantineProvider} from '@mantine/core';
-import {theme} from "./theme.ts";
+import { MantineProvider } from '@mantine/core';
+import { theme } from "./theme.ts";
+import TriLayout from "@composites/layout/TriLayout.tsx";
 
 
 function App() {
   return (
     <>
      <MantineProvider theme={theme} defaultColorScheme={"auto"}>
-       <Center h="100vh">The Application</Center>
+       <TriLayout/>
      </MantineProvider>
     </>
   )

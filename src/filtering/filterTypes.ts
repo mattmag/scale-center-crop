@@ -2,6 +2,7 @@
 
 import type { ion } from "@zedux/react";
 import type { AtomOf, IonOf } from "@util/atoms.ts";
+import type { ReactElement } from "react";
 
 
 export type Predicate<TItem> = (item: TItem) => boolean
@@ -19,9 +20,12 @@ export interface FilterInstanceBase<TItem, TMeta, TUserInput> {
   label: string;
   metaIon: IonOf<TMeta>;
   predicateIon: ReturnType<typeof ion<Predicate<TItem>>>;
-  userInputIon: AtomOf<TUserInput>;
+  userInputAtom: AtomOf<TUserInput>;
 }
 
 export type FilterFactory = <TItem>(definition: FilterDefinitionBase<TItem, unknown>, items: AtomOf<TItem[]>) =>
-  FilterInstanceBase<TItem, unknown, unknown>; 
+  FilterInstanceBase<TItem, unknown, unknown>;
 export type FilterFactories = Map<string, FilterFactory>;
+
+export type FilterComponentFactory = <TItem>(instance: FilterInstanceBase<TItem, unknown, unknown>) => ReactElement;
+export type FilterComponentFactories = Map<string, FilterComponentFactory>;

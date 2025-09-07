@@ -1,8 +1,23 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-import type { FilterDefinitionBase, FilterInstanceBase, Predicate } from "@filtering/filterBase.ts";
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+import type {
+  FilterDefinitionBase,
+  FilterInstanceBase,
+  Predicate
+} from "@filtering/filterTypes.ts";
 import type { AtomOf } from "@util/atoms.ts";
-import { ion } from "@zedux/react";
+import {
+  api,
+  atom,
+  injectCallback,
+  injectEcosystem,
+  injectEffect,
+  injectSignal,
+  ion
+} from "@zedux/react";
+import { clamp } from "@util/math.ts";
 
 export interface BoundedSpanFilterDefinition<TItem> extends FilterDefinitionBase<TItem, number> {
   step: number;
@@ -28,7 +43,7 @@ export type BoundedSpanFilterInstance<TItem> = FilterInstanceBase<TItem, Bounded
 export function isBoundedSpanFilterDefinition<TItem>(
   definition: FilterDefinitionBase<TItem, unknown>
 ): definition is BoundedSpanFilterDefinition<TItem> {
-  return definition.key === "bounded-span";
+  return definition.kind === "bounded-span";
 }
 
 
@@ -61,7 +76,7 @@ export function createBoundedSpanFilterInstance<TItem>(
       min = Math.min(value, min);
       max = Math.max(value, max);
     }
-    //...
+    
     return {
       lowerBound: min,
       upperBound: max,
@@ -71,17 +86,40 @@ export function createBoundedSpanFilterInstance<TItem>(
     }
   });
   
-  const userInputIon = ion<BoundedSpanUserInput>(getKey("user-input"), ({get}) => {
-    const meta = get(metaIon);
-    return {
-      lower: meta.lowerBound,
-      upper: meta.upperBound
-    }
-  });
+  const userInputAtom = atom<BoundedSpanUserInput>(getKey("user-input"), () => {
+    const signal = injectSignal<BoundedSpanUserInput>({ lower: -Infinity, upper: Infinity })
+    const { get } = injectEcosystem()
+    
+    const setValue = injectCallback((newValue: BoundedSpanUserInput) => {
+      const { lowerBound, upperBound } = get(metaIon)
+      signal.set({
+        lower: clamp(newValue.lower, lowerBound, upperBound),
+        upper: clamp(newValue.upper, lowerBound, upperBound)
+      })
+    }, [get(metaIon)]);
+
+    // keep the user input clamped incase the range changes
+    injectEffect(() => {
+      const { lowerBound, upperBound } = get(metaIon)
+      signal.set(prev => {
+        return {
+          lower: clamp(prev.lower, lowerBound, upperBound),
+          upper: clamp(prev.upper, lowerBound, upperBound)
+        };
+      })
+    }, [get(metaIon)], { synchronous: true })
+
+    const reset = injectCallback(() => {
+      const { lowerBound, upperBound } = get(metaIon)
+      signal.set({ lower: lowerBound, upper: upperBound })
+    }, [get(metaIon)])
+
+    return api(signal).setExports({ setValue, reset })
+  })
   
   const predicateIon = ion<Predicate<TItem>>(getKey("predicate"), ({ get }) => {
     const { lowerBound, upperBound } = get(metaIon)
-    const { lower, upper } = get(userInputIon)
+    const { lower, upper } = get(userInputAtom)
     
     const clampedLower = Math.max(lowerBound, Math.min(lower, upperBound))
     const clampedUpper = Math.max(lowerBound, Math.min(upper, upperBound))
@@ -99,7 +137,7 @@ export function createBoundedSpanFilterInstance<TItem>(
     label: definition.label,
     metaIon,
     predicateIon,
-    userInputIon
+    userInputAtom: userInputAtom
   };
 }
 
@@ -107,6 +145,6 @@ export function createBoundedSpanFilterInstance<TItem>(
 export function isBoundedSpanFilterInstance<TItem>(
   instance: FilterInstanceBase<TItem, any, any>
 ): instance is BoundedSpanFilterInstance<TItem> {
-  return instance.key === "bounded-span";
+  return instance.kind === "bounded-span";
 }
 /* eslint-enable @typescript-eslint/no-explicit-any */
