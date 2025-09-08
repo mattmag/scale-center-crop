@@ -4,7 +4,7 @@ import {fileURLToPath} from "node:url";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/scale-center-crop/',
+  base: "./",
   plugins: [
     react({
       babel: {
