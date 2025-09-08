@@ -5,7 +5,7 @@ import {createContext, useContext} from "react";
 
 export type GridListContextValue = {
   mode: GridListSelectionMode;
-  selectedIDs: GridListItemID[];
+  selectedIDs: ReadonlySet<GridListItemID>;
   select: (id: GridListItemID) => void;
   unselect: (id: GridListItemID) => void;
   toggle: (id: GridListItemID) => void;

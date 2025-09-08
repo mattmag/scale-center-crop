@@ -1,33 +1,37 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 import { useEffect, useState } from "react";
+import { areSetsEquivalent } from "@util/collections.ts";
 
 export interface FilteredSelectedIDsProps<T> {
   filteredItems: T[];
   getId: (item: T) => string;
-  initialSelection?: string[];
+  initialSelection?: Set<string>;
 }
 
-export type FilteredSelectedIDsValue = [string[], (ids: string[]) => void];
+export type FilteredSelectedIDsValue = [ReadonlySet<string>, (ids: ReadonlySet<string>) => void];
 
 export function useFilteredSelectedIDs<T>({
   filteredItems, 
   initialSelection,
   getId
 }: FilteredSelectedIDsProps<T>) : FilteredSelectedIDsValue {
-  const [selectedIDs, setSelectedIDs] = useState<string[]>(initialSelection ?? []);
+  const [selectedIDs, setSelectedIDs] = useState<ReadonlySet<string>>(initialSelection ?? new Set());
 
   useEffect(() => {
     setSelectedIDs(current => {
-      const stillVisible = filteredItems
-        .filter(item => current.includes(getId(item)))
-        .map(item => getId(item));
+      const stillVisibleIDs = new Set(
+        filteredItems
+        .filter(item => current.has(getId(item)))
+        .map(item => getId(item))
+      );
+      
       // not doing the below caused a ton of re-renders
-      // could do a more thorough check though
-      if (stillVisible.length === current.length) {
+      if (areSetsEquivalent(current, stillVisibleIDs)) {
         return current;
       }
-      return current.filter(id => stillVisible.includes(id));
+      
+      return new Set(Array.from(current).filter(id => stillVisibleIDs.has(id)));
     })
   }, [filteredItems, getId]);
   

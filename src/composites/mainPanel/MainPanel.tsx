@@ -5,18 +5,35 @@ import { useAtomValue } from "@zedux/react";
 import DeviceList from "@composites/mainPanel/DeviceList.tsx";
 import { Tabs, Text } from "@mantine/core";
 import { IconGridView, IconOverlayView } from "@theming/Icons.tsx";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import StickyTabsListWrapper from "@components/tabs/StickyTabsListWrapper.tsx";
 import TabListWithRightSide from "@components/tabs/TabListWithRightSide.tsx";
 import { DeviceListGroupingSelector } from "@composites/mainPanel/DeviceListGroupingSelector.tsx";
 import type { DeviceGrouping, DeviceView } from "@composites/mainPanel/mainPanelTypes.ts";
+import { useScaleResults } from "@composites/mainPanel/useScaleResults.tsx";
 
 
 export default function MainPanel() {
   const filteredDevices = useAtomValue(filteredDevicesAtom);
   const [activeTab, setActiveTab] = useState<DeviceView>("individual");
   const [activeGrouping, setActiveGrouping] = useState<DeviceGrouping>("devices");
+  const baseResolution = useMemo(() => ({ width: 320, height: 240 }), [])
   
+  const individualResults = useScaleResults(
+    {
+      baseResolution,
+      devices: filteredDevices,
+      grouping: "devices"
+    });
+  
+  const screenResolutionResults = useScaleResults(
+    {
+      baseResolution,
+      devices: filteredDevices,
+      grouping: "screen-resolutions"
+    });
+  
+  const activeResults = activeGrouping === "devices" ? individualResults : screenResolutionResults;
   
   return (
     <Tabs
@@ -36,8 +53,8 @@ export default function MainPanel() {
                 <DeviceListGroupingSelector
                   selected={activeGrouping}
                   setSelected={setActiveGrouping}
-                  devicesLength={filteredDevices.length}
-                  screenSizesLength={42}
+                  devicesLength={individualResults.length}
+                  screenSizesLength={screenResolutionResults.length}
                 />
               }
             </>
@@ -53,7 +70,7 @@ export default function MainPanel() {
       </StickyTabsListWrapper>
       
       <Tabs.Panel value="individual" pt="md">
-        <DeviceList devices={filteredDevices}/>
+        <DeviceList results={activeResults}/>
       </Tabs.Panel>
       
       <Tabs.Panel value="overlay">

@@ -13,8 +13,8 @@ import {
 
 
 export interface GridListProps extends SimpleGridProps {
-  selectedIDs: GridListItemID[];
-  onSelectedIDsChanged: (newValue: GridListItemID[]) => void;
+  selectedIDs: ReadonlySet<GridListItemID>;
+  onSelectedIDsChanged: (newValue: ReadonlySet<GridListItemID>) => void;
   selectionMode?: GridListSelectionMode;
 }
 
@@ -29,9 +29,11 @@ export function GridList({
 
   const select = useCallback((id: GridListItemID) => {
       if (selectionMode === "single") {
-        onSelectedIDsChanged(selectedIDs.includes(id) ? [] : [id]);
-      } else if (!selectedIDs.includes(id)) {
-        onSelectedIDsChanged([...selectedIDs, id]);
+        onSelectedIDsChanged(selectedIDs.has(id)
+          ? new Set<GridListItemID>() 
+          : new Set<GridListItemID>([id]));
+      } else if (!selectedIDs.has(id)) {
+        onSelectedIDsChanged(new Set([...selectedIDs, id]));
       }
     },
   [selectionMode, selectedIDs, onSelectedIDsChanged]
@@ -39,16 +41,16 @@ export function GridList({
 
   const unselect = useCallback((id: GridListItemID) => {
       if (selectionMode === "single") {
-        onSelectedIDsChanged([]);
-      } else if (selectedIDs.includes(id)) {
-        onSelectedIDsChanged(selectedIDs.filter(a => a !== id));
+        onSelectedIDsChanged(new Set<GridListItemID>());
+      } else if (selectedIDs.has(id)) {
+        onSelectedIDsChanged(new Set(Array.from(selectedIDs).filter(a => a !== id)));
       }
     },
     [selectionMode, selectedIDs, onSelectedIDsChanged]
   );
 
   const toggle = useCallback((id: GridListItemID) =>
-      (selectedIDs.includes(id) ? unselect(id) : select(id)),
+      (selectedIDs.has(id) ? unselect(id) : select(id)),
     [selectedIDs, select, unselect]
   );
 
@@ -87,7 +89,7 @@ function GridListItem({
 ) {
   const gridList = useGridList();
 
-  const selected = gridList.selectedIDs.includes(id);
+  const selected = gridList.selectedIDs.has(id);
   const role = gridList.mode === "single" ? "radio" : "checkbox";
 
   const itemContextType: GridListItemContextValue = {

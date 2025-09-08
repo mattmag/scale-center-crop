@@ -2,18 +2,34 @@
 
 import { GridList } from "@components/gridList/GridList";
 import { useFilteredSelectedIDs } from "@components/gridList/useFilteredSelectedIDs";
-import { type Device, getKey } from "@data/deviceTypes.ts";
 import { SquareCardItemWrapper } from "@components/gridList/SquareCardItemWrapper.tsx";
 import { Stack, Text } from "@mantine/core";
-
+import type { ScaleResultItem } from "@composites/mainPanel/mainPanelTypes.ts";
+import { useEffect } from "react";
+import { useSidePanelContent } from "@composites/sidePanel/useSidePanelContent.ts";
 
 
 export interface DeviceListProps {
-  devices: Device[]
+  results: ScaleResultItem[]
 }
 
-export default function DeviceList({ devices } : DeviceListProps) {
-  const [selectedIDs, setSelectedIDs] = useFilteredSelectedIDs({ filteredItems: devices, getId: getKey});
+export default function DeviceList({ results } : DeviceListProps) {
+  const [selectedIDs, setSelectedIDs] = useFilteredSelectedIDs(
+    {
+      filteredItems: results,
+      getId: result => result.key
+    });
+  
+  const { setContent: setSidePanelContent } = useSidePanelContent();
+  
+  useEffect(() => {
+    setSidePanelContent(results.filter(result => selectedIDs.has(result.key))[0] ?? null)
+  }, [setSidePanelContent, selectedIDs, results]);
+
+  // TODO: not stable
+  useEffect(() => {
+    return () => setSidePanelContent(null);
+  }, []);
   
   return (
     <GridList
@@ -21,12 +37,12 @@ export default function DeviceList({ devices } : DeviceListProps) {
       onSelectedIDsChanged={setSelectedIDs}
       selectionMode={"single"}
       cols={{ sm: 2, md: 4, lg: 6}}>
-      {devices.map((device) => 
-        <GridList.Item key={getKey(device)} id={getKey(device)}>
+      {results.map((result) => 
+        <GridList.Item key={result.key} id={result.key}>
           <DeviceCard
-            deviceClass={device.deviceClass}
-            width={device.display.resolution.width}
-            height={device.display.resolution.height}
+            numberOfDevices={result.devices.length}
+            width={result.result.screenResolution.width}
+            height={result.result.screenResolution.height}
           />
         </GridList.Item>
       )}
@@ -35,20 +51,20 @@ export default function DeviceList({ devices } : DeviceListProps) {
 }
 
 type DeviceCardProps = {
-  deviceClass: string;
+  numberOfDevices: number;
   width: number;
   height: number;
 };
 
 function DeviceCard({
-  deviceClass,
+  numberOfDevices,
   width,
   height,
 }: DeviceCardProps) {
   return (
     <SquareCardItemWrapper>
       <Stack>
-        <Text>{deviceClass}</Text>
+        <Text>Devices: {numberOfDevices}</Text>
         <Text>
           {width} × {height}
         </Text>
