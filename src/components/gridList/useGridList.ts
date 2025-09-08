@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 import type {GridListItemID, GridListSelectionMode} from "@components/gridList/types.ts";
 import {createContext, useContext} from "react";
 

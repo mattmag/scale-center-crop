@@ -1,7 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-// SPDX-License-Identifier: AGPL-3.0-or-later
-
 import type {
   FilterDefinitionBase,
   FilterInstanceBase,
@@ -98,7 +96,7 @@ export function createBoundedSpanFilterInstance<TItem>(
       })
     }, [get(metaIon)]);
 
-    // keep the user input clamped incase the range changes
+    // keep the user input clamped in case the range changes
     injectEffect(() => {
       const { lowerBound, upperBound } = get(metaIon)
       signal.set(prev => {

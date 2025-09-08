@@ -29,6 +29,7 @@
       "@composites/*": ["src/composites/*"],
       "@data/*": ["src/data/*"],
       "@filtering/*": ["src/filtering/*"],
+      "@theming/*": ["src/theming/*"],
       "@util/*": ["src/util/*"]
     }
   },

@@ -1,12 +1,14 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-import { ActionIcon, Tooltip } from "@mantine/core";
+import { ActionIcon, type ActionIconVariant, Tooltip } from "@mantine/core";
 import type { ReactNode } from "react";
 
 export interface ActionIconRadioGroupProps {
   items: ActionIconRadioGroupItem[];
   selectedItemID: string;
   onSelectedItemIDChange: (selectedItemID: string) => void;
+  selectedVariant?: ActionIconVariant
+  unselectedVariant?: ActionIconVariant
 }
 
 export type ActionIconRadioItemID = string;
@@ -18,13 +20,19 @@ export interface ActionIconRadioGroupItem {
   ariaLabel?: string;
 }
 
-export function ActionIconRadioGroup({items, selectedItemID, onSelectedItemIDChange}: ActionIconRadioGroupProps) {
+export function ActionIconRadioGroup({
+  items,
+  selectedItemID,
+  onSelectedItemIDChange,
+  selectedVariant = "outline",
+  unselectedVariant = "default"
+}: ActionIconRadioGroupProps) {
   return (
     <ActionIcon.Group>
       {items.map((item) => (
         <Tooltip label={item.tooltip} key={item.id}>
           <ActionIcon
-            variant={selectedItemID === item.id ? "outline" : "default"}
+            variant={selectedItemID === item.id ? selectedVariant : unselectedVariant}
             size="lg"
             aria-label={item.ariaLabel ?? item.tooltip ?? undefined}
             onClick={() => onSelectedItemIDChange(item.id)}

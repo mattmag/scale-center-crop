@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 import {ActionIcon, Paper} from "@mantine/core";
 import {useGridListItem} from "@components/gridList/useGridListItem.ts";
 import {type ReactNode} from "react";

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 import { Box, SimpleGrid, type SimpleGridProps } from "@mantine/core";
 import type { GridListItemID, GridListSelectionMode } from "./types.ts";
 import { GridListContext, type GridListContextValue, useGridList } from "./useGridList";

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 import {createContext, useContext} from "react";
 import type {GridListItemID} from "@components/gridList/types.ts";
 

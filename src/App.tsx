@@ -4,14 +4,14 @@ import './App.css'
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
 import { theme } from "./theme.ts";
-import TriLayout from "@composites/layout/TriLayout.tsx";
+import Layout from "@composites/layout/Layout.tsx";
 
 
 function App() {
   return (
     <>
      <MantineProvider theme={theme} defaultColorScheme={"auto"}>
-       <TriLayout/>
+       <Layout/>
      </MantineProvider>
     </>
   )

@@ -18,6 +18,7 @@ export default defineConfig({
       "@composites": fileURLToPath(new URL("./src/composites", import.meta.url)),
       "@data": fileURLToPath(new URL("./src/data", import.meta.url)),
       "@filtering": fileURLToPath(new URL("./src/filtering", import.meta.url)),
+      "@theming": fileURLToPath(new URL("./src/theming", import.meta.url)),
       "@util": fileURLToPath(new URL("./src/util", import.meta.url)),
     },
   },
