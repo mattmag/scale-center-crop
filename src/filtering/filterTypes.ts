@@ -2,7 +2,7 @@
 
 import type { ion } from "@zedux/react";
 import type { AtomOf, IonOf } from "@util/atoms.ts";
-import type { ReactElement, ReactNode } from "react";
+import type { ReactElement } from "react";
 
 
 export type Predicate<TItem> = (item: TItem) => boolean
@@ -10,7 +10,7 @@ export type Predicate<TItem> = (item: TItem) => boolean
 export interface FilterDefinitionBase<TItem, TValue> {
   kind: string;
   key: string;
-  label: ReactNode;
+  label: string;
   getValue: (item: TItem) => TValue
 }
 

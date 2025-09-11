@@ -8,7 +8,7 @@ export interface ItemWrapperTemplateProps {
   children?: ReactNode;
 }
 
-export function SquareCardItemWrapper({
+export function ItemWrapper({
   children,
 }: ItemWrapperTemplateProps) {
   const { isSelected, toggle } = useGridListItem();
@@ -19,7 +19,6 @@ export function SquareCardItemWrapper({
         withBorder={false}
         p={0}
         shadow="sm"
-        style={{ aspectRatio: "1/1" }}
         onClick={toggle}
       >
         <ActionIcon
@@ -27,8 +26,10 @@ export function SquareCardItemWrapper({
           variant={isSelected ? "outline" : "default"}
           styles={{
             root: {
+              display: 'block',
               width: "100%",
               height: "100%",
+              boxSizing: 'border-box'
             }
           }}
           onClick={toggle}

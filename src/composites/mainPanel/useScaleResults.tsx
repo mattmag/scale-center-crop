@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 import { getKey, type Device, type Size } from "@data/deviceTypes.ts";
 import type { DeviceGrouping, ScaleResultItem } from "@composites/mainPanel/mainPanelTypes.ts";
 import { groupBy } from "@util/collections.ts";

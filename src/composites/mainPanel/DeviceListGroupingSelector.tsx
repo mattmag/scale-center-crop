@@ -5,15 +5,15 @@ import { IconGroupByDevice, IconGroupByScreenResolution } from "@theming/Icons.t
 import type { DeviceGrouping } from "@composites/mainPanel/mainPanelTypes.ts";
 
 export interface DeviceListGroupingSelector {
-  selected: DeviceGrouping;
-  setSelected: (newValue: DeviceGrouping) => void;
+  value: DeviceGrouping;
+  onChanged: (newValue: DeviceGrouping) => void;
   devicesLength: number;
   screenSizesLength: number;
 }
 
 export function DeviceListGroupingSelector({
-  selected,
-  setSelected,
+  value,
+  onChanged,
   devicesLength,
   screenSizesLength
 }: DeviceListGroupingSelector) {
@@ -21,8 +21,8 @@ export function DeviceListGroupingSelector({
     <SegmentedControl
       radius="lg"
       size="sm"
-      value={selected}
-      onChange={newValue => setSelected(newValue as DeviceGrouping)}
+      value={value}
+      onChange={newValue => onChanged(newValue as DeviceGrouping)}
       data={[
         {
           value: "devices",
