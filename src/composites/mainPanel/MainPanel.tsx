@@ -3,7 +3,7 @@
 import { filteredDevicesAtom } from "@data/filters.ts";
 import { useAtomValue } from "@zedux/react";
 import DeviceList from "@composites/mainPanel/DeviceList.tsx";
-import { LoadingOverlay, Tabs, Text } from "@mantine/core";
+import { Tabs, Text } from "@mantine/core";
 import { IconGridView, IconOverlayView } from "@theming/Icons.tsx";
 import { useCallback, useMemo, useState, useTransition } from "react";
 import StickyTabsListWrapper from "@components/tabs/StickyTabsListWrapper.tsx";
@@ -38,7 +38,7 @@ export default function MainPanel() {
   
   const activeResults = deferredActiveGrouping === "devices" ? individualResults : screenResolutionResults;
   const [ debouncedActiveResults ] = useDebouncedValue(activeResults, 1000, { leading: true })
-  const [isPending, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
   
   const handleOnGroupingChanged = useCallback((newValue: DeviceGrouping) => {
     setActiveGrouping(newValue);
@@ -84,7 +84,6 @@ export default function MainPanel() {
       
       <Tabs.Panel value="individual" pt="md">
         <div style={{ position: "relative" }}>
-          <LoadingOverlay visible={isPending} zIndex={3} loaderProps={{ type: undefined }} overlayProps={{ blur: "0.2rem", opacity: 0.75 }}  />
           <DeviceList results={debouncedActiveResults} isNumberOfDevicesVisible={deferredActiveGrouping === "screen-resolutions"}/>
         </div>
       </Tabs.Panel>
