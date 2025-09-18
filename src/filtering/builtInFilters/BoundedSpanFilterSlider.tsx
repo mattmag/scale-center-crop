@@ -26,11 +26,11 @@ export function BoundedSpanFilterSlider<TItem>({ filter }: BoundedSpanFilterProp
     : "";
   
   return (
-    <Stack gap={"0"}>
-      <Text size="md">{filter.label}</Text>
+    <Stack gap={0}>
       <Text size="xs">{sliderRange[0].toFixed(meta.formattingDecimals) + unitSuffix} - {sliderRange[1].toFixed(meta.formattingDecimals) + unitSuffix}</Text>
       <RangeSlider
         mt="0.5rem"
+        mb="1em"
         label={null}
         value={sliderRange}
         step={meta.step}

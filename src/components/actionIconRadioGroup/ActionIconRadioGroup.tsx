@@ -33,7 +33,7 @@ export function ActionIconRadioGroup({
         <Tooltip label={item.tooltip} key={item.id}>
           <ActionIcon
             variant={selectedItemID === item.id ? selectedVariant : unselectedVariant}
-            size="lg"
+            size="input-xs"
             aria-label={item.ariaLabel ?? item.tooltip ?? undefined}
             onClick={() => onSelectedItemIDChange(item.id)}
           >

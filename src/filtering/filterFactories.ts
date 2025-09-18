@@ -5,11 +5,16 @@ import {
   type BoundedSpanFilterDefinition,
   boundedSpanFilterFactory
 } from "@filtering/builtInFilters/boundedSpanFilter.ts";
+import {
+  type SelectFilterDefinition,
+  selectFilterFactory
+} from "@filtering/builtInFilters/selectFilter.ts";
 
 
-export type BuiltinFilterDefinitions<TItem> = BoundedSpanFilterDefinition<TItem>;
+export type BuiltinFilterDefinitions<TItem> = BoundedSpanFilterDefinition<TItem> | SelectFilterDefinition<TItem>;
 
 export const builtinFilterFactories: FilterFactories = new Map<string, FilterFactory>([
-  ["bounded-span", boundedSpanFilterFactory]
+  ["bounded-span", boundedSpanFilterFactory],
+  ["select", selectFilterFactory]
 ]);
 

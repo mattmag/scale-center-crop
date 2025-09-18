@@ -11,6 +11,7 @@ export interface FilterDefinitionBase<TItem, TValue> {
   kind: string;
   key: string;
   label: string;
+  helpText: string;
   getValue: (item: TItem) => TValue
 }
 
@@ -18,6 +19,7 @@ export interface FilterInstanceBase<TItem, TMeta, TUserInput> {
   kind: string;
   key: string;
   label: string;
+  helpText: string;
   metaIon: IonOf<TMeta>;
   predicateIon: ReturnType<typeof ion<Predicate<TItem>>>;
   userInputAtom: AtomOf<TUserInput>;

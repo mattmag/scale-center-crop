@@ -8,9 +8,12 @@ import type {
 import type { BoundedSpanFilterInstance } from "@filtering/builtInFilters/boundedSpanFilter.ts";
 import { BoundedSpanFilterSlider } from "@filtering/builtInFilters/BoundedSpanFilterSlider.tsx";
 import { Fragment } from "react";
+import { SelectFilterPicker } from "@filtering/builtInFilters/SelectFilterPicker.tsx";
+import type { SelectFilterInstance } from "@filtering/builtInFilters/selectFilter.ts";
 
 export const builtinFilterComponentFactories: FilterComponentFactories = new Map<string, FilterComponentFactory>([
-  ["bounded-span", instance => <BoundedSpanFilterSlider filter={instance  as BoundedSpanFilterInstance<unknown>} />]
+  ["bounded-span", instance => <BoundedSpanFilterSlider filter={instance as BoundedSpanFilterInstance<unknown>} />],
+  ["select", instance => <SelectFilterPicker filter={instance as SelectFilterInstance<unknown>} />],
 ])
 
 export function getFilterComponent<TItem>(instance: FilterInstanceBase<TItem, unknown, unknown>, factories: FilterComponentFactories = builtinFilterComponentFactories) {

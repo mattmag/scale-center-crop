@@ -17,10 +17,14 @@ import {
 } from "@zedux/react";
 import { clamp } from "@util/math.ts";
 
-export interface BoundedSpanFilterDefinition<TItem> extends FilterDefinitionBase<TItem, number> {
+export type UndefinedBehavior = "include" | "exclude";
+
+export interface BoundedSpanFilterDefinition<TItem> extends FilterDefinitionBase<TItem, number | undefined> {
+  kind: "bounded-span";
   step: number;
   formattingDecimals?: number;
   formattingSuffix?: string;
+  valueUndefinedBehavior?: UndefinedBehavior;
 }
 
 export interface BoundedSpanMeta {
@@ -61,8 +65,8 @@ export function createBoundedSpanFilterInstance<TItem>(
   definition: BoundedSpanFilterDefinition<TItem>,
   sourceItemsAtom: AtomOf<TItem[]>
 ): BoundedSpanFilterInstance<TItem> {
-  
   const getKey = (part: string) => `${sourceItemsAtom.key}:filters:${definition.key}:${part}`;
+  
   const metaIon = ion<BoundedSpanMeta>(getKey("meta"), ({ get }) => {
     const items = get(sourceItemsAtom)
     let min = Infinity;
@@ -71,8 +75,10 @@ export function createBoundedSpanFilterInstance<TItem>(
     for (let i = 0; i < items.length; i++) {
       const item = items[i];
       const value = definition.getValue(item);
-      min = Math.min(value, min);
-      max = Math.max(value, max);
+      if (value) {
+        min = Math.min(value, min);
+        max = Math.max(value, max);
+      }
     }
     
     return {
@@ -80,7 +86,8 @@ export function createBoundedSpanFilterInstance<TItem>(
       upperBound: max,
       formattingSuffix: definition.formattingSuffix,
       formattingDecimals: definition.formattingDecimals,
-      step: definition.step
+      step: definition.step,
+      valueUndefinedBehavior: definition.valueUndefinedBehavior ?? "include"
     }
   });
   
@@ -124,7 +131,11 @@ export function createBoundedSpanFilterInstance<TItem>(
 
     return (item: TItem) => {
       const value = definition.getValue(item);
-      return value >= clampedLower && value <= clampedUpper
+      if (value) {
+        return value >= clampedLower && value <= clampedUpper  
+      } else {
+        return definition.valueUndefinedBehavior === "include";
+      }
     }
   })
 
@@ -133,6 +144,7 @@ export function createBoundedSpanFilterInstance<TItem>(
     key: definition.key,
     kind: definition.kind,
     label: definition.label,
+    helpText: definition.helpText,
     metaIon,
     predicateIon,
     userInputAtom: userInputAtom
