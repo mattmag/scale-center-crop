@@ -3,38 +3,31 @@
 import { GridList } from "@components/gridList/GridList";
 import { useFilteredSelectedIDs } from "@components/gridList/useFilteredSelectedIDs";
 import { ItemWrapper } from "@components/gridList/ItemWrapper.tsx";
-import {
-  Badge,
-  Box,
-  Group,
-  Stack,
-  Tooltip,
-  useComputedColorScheme,
-  useMantineTheme
-} from "@mantine/core";
+import { Badge, Box, Group, Stack, Tooltip } from "@mantine/core";
 import type { ScaleResultItem } from "@composites/mainPanel/mainPanelTypes.ts";
 import { useEffect } from "react";
 import { useSidePanelContent } from "@composites/sidePanel/useSidePanelContent.ts";
 import { SingleOverlay } from "@components/pictograms/SingleOverlay.tsx";
+import { usePictogramColors } from "@components/pictograms/styles.ts";
 
 
 export interface DeviceListProps {
-  results: ScaleResultItem[];
+  resultItems: ScaleResultItem[];
   isNumberOfDevicesVisible: boolean;
 }
 
-export default function DeviceList({ results, isNumberOfDevicesVisible } : DeviceListProps) {
+export default function DeviceList({ resultItems, isNumberOfDevicesVisible } : DeviceListProps) {
   const [selectedIDs, setSelectedIDs] = useFilteredSelectedIDs(
     {
-      filteredItems: results,
+      filteredItems: resultItems,
       getId: result => result.key
     });
   
   const { setContent: setSidePanelContent } = useSidePanelContent();
   
   useEffect(() => {
-    setSidePanelContent(results.filter(result => selectedIDs.has(result.key))[0] ?? null)
-  }, [setSidePanelContent, selectedIDs, results]);
+    setSidePanelContent(resultItems.filter(result => selectedIDs.has(result.key))[0] ?? null)
+  }, [setSidePanelContent, selectedIDs, resultItems]);
 
   // TODO: not stable
   useEffect(() => {
@@ -47,7 +40,7 @@ export default function DeviceList({ results, isNumberOfDevicesVisible } : Devic
       onSelectedIDsChanged={setSelectedIDs}
       selectionMode={"single"}
       cols={{ base: 2, sm: 3, lg: 4, xl: 5}}>
-      {results.map((result) => 
+      {resultItems.map((result) => 
         <GridList.Item key={result.key} id={result.key}>
           <DeviceCard resultItem={result} isNumberOfDevicesVisible={isNumberOfDevicesVisible}/>
         </GridList.Item>
@@ -65,8 +58,7 @@ function DeviceCard({
   resultItem,
   isNumberOfDevicesVisible
 }: DeviceCardProps) {
-  const theme = useMantineTheme();
-  const colorScheme = useComputedColorScheme();
+  const pictogramColors = usePictogramColors();
   return (
     <ItemWrapper>
       <Box w={"100%"} h={"100%"} p={"sm"} style={{ boxSizing: "border-box" }}>
@@ -76,8 +68,8 @@ function DeviceCard({
             screenResolution={resultItem.result.screenResolution}
             scaledBaseResolution={resultItem.result.scaledBaseResolution}
             drawingScale={resultItem.drawingScale}
-            screenColor={colorScheme === "dark" ? theme.colors.dark[0] : theme.colors.dark[3]}
-            scaledResolutionColor={"#ad9191"}
+            screenColor={pictogramColors.screenResolutionColor}
+            scaledResolutionColor={pictogramColors.scaledBaseResolutionColor}
           />
           <Group gap={"xs"} justify={"start"}>
             <Tooltip label="Scale Factor">

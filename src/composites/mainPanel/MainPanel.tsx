@@ -12,6 +12,7 @@ import { DeviceListGroupingSelector } from "@composites/mainPanel/DeviceListGrou
 import type { DeviceGrouping, DeviceView } from "@composites/mainPanel/mainPanelTypes.ts";
 import { useScaleResults } from "@composites/mainPanel/useScaleResults.tsx";
 import { useDebouncedValue } from "@mantine/hooks";
+import { OverlayPanel } from "./OverlayPanel";
 
 
 export default function MainPanel() {
@@ -36,8 +37,8 @@ export default function MainPanel() {
       grouping: "screen-resolutions"
     });
   
-  const activeResults = deferredActiveGrouping === "devices" ? individualResults : screenResolutionResults;
-  const [ debouncedActiveResults ] = useDebouncedValue(activeResults, 1000, { leading: true })
+  const activeResultsItems = deferredActiveGrouping === "devices" ? individualResults : screenResolutionResults;
+  const [ debouncedActiveResultsItems ] = useDebouncedValue(activeResultsItems, 1000, { leading: true })
   const [, startTransition] = useTransition();
   
   const handleOnGroupingChanged = useCallback((newValue: DeviceGrouping) => {
@@ -84,12 +85,12 @@ export default function MainPanel() {
       
       <Tabs.Panel value="individual" pt="md">
         <div style={{ position: "relative" }}>
-          <DeviceList results={debouncedActiveResults} isNumberOfDevicesVisible={deferredActiveGrouping === "screen-resolutions"}/>
+          <DeviceList resultItems={debouncedActiveResultsItems} isNumberOfDevicesVisible={deferredActiveGrouping === "screen-resolutions"}/>
         </div>
       </Tabs.Panel>
       
       <Tabs.Panel value="overlay">
-        Overlay
+        <OverlayPanel resultItems={screenResolutionResults}/>
       </Tabs.Panel>
     </Tabs>
   )

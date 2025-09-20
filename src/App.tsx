@@ -3,7 +3,7 @@
 import './App.css'
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
-import { theme } from "./theme.ts";
+import { theme } from "@theming/theme.ts";
 import Layout from "@composites/layout/Layout.tsx";
 
 

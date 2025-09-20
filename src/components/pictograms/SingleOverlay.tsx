@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 import type { Size } from "@data/deviceTypes";
+import { StripedPattern } from "./patterns.tsx";
 
 
 export interface SingleOverlayProps {
@@ -36,28 +37,7 @@ export function SingleOverlay({
       style={{ display: "block", aspectRatio: aspectRatio, overflow: "visible" }}
     >
       <defs>
-
-        <pattern
-          id={"stripe"}
-          width="6"
-          height="6"
-          patternTransform="rotate(45 0 0)" 
-          patternUnits={"userSpaceOnUse"}
-          patternContentUnits="userSpaceOnUse"
-        >
-            <rect
-              x="0" y="0" width="6" height="6"
-              fill={`${scaledResolutionColor}`}
-              fillOpacity={0.25}
-            />
-            <line
-              x1="0" y1="0" x2="0" y2="6"
-              vectorEffect="non-scaling-stroke"
-              stroke={`${scaledResolutionColor}`}
-              strokeWidth={1.5}
-              strokeOpacity={0.6}
-            />
-        </pattern>
+        <StripedPattern id={"stripe"} color={scaledResolutionColor}/>
       </defs>
       <g>
         <rect

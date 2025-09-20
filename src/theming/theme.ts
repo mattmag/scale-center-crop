@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 import { Card, Container, createTheme, Paper, rem, Select } from "@mantine/core";
 import type { MantineThemeOverride } from "@mantine/core";
 
@@ -77,4 +79,5 @@ export const theme: MantineThemeOverride = createTheme({
   other: {
     style: "mantine",
   },
+  cursorType: "pointer",
 });
