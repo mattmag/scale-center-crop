@@ -25,6 +25,16 @@ export function DeviceListGroupingSelector({
       onChange={newValue => onChanged(newValue as DeviceGrouping)}
       data={[
         {
+          value: "screen-resolutions",
+          label: (
+            <Group wrap="nowrap" gap="0.2rem">
+              <IconGroupByScreenResolution size="sm"/>
+              <Text visibleFrom="sm" size="xs">Screen Sizes</Text>
+              <Text size="xs">({screenSizesLength})</Text>
+            </Group>
+          )
+        },
+        {
           value: "devices",
           label: (
             <Group wrap="nowrap" gap="0.2rem">
@@ -34,16 +44,6 @@ export function DeviceListGroupingSelector({
             </Group>
           )
         },
-        {
-          value: "screen-resolutions",
-          label: (
-            <Group wrap="nowrap" gap="0.2rem">
-              <IconGroupByScreenResolution size="sm"/>
-              <Text visibleFrom="sm" size="xs">Screen Sizes</Text>
-              <Text size="xs">({screenSizesLength})</Text>
-            </Group>
-          )
-        }
       ]}
     />
   )

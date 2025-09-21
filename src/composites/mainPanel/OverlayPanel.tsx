@@ -12,7 +12,7 @@ export interface OverlayPanelProps {
 
 export function OverlayPanel({ resultItems }: OverlayPanelProps) {
   const results = useMemo(() => resultItems.map(r => r.result), [resultItems])
-  const [showAll, setShowAll] = useState(false);
+  const [showAll, setShowAll] = useState(true);
   return (
     <Stack mt="md">
       <Group justify="end">

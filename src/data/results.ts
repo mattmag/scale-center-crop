@@ -11,7 +11,7 @@ export interface ScaleResult {
   scaleFactor: number;
   /* The base resolution with the scaleFactor applied. Reported in pixels. */
   scaledBaseResolution: Size;
-  /* The area within the base resolution that is visible at the provided scale factor. Reported in pixels */
+  /* The area within the base resolution that is visible after scaling and cropping. Reported in pixels */
   croppedArea: Size;
   /* The margin in pixels along the x-axis from the edge of the base resolution to the edge of cropped area */
   cropMarginX: number;

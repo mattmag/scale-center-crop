@@ -80,7 +80,10 @@ function calculateResult(
     height: baseResolution.height * scaleFactor
   }
   const drawingScale = Math.min(1.0, Math.max(scaledBaseResolution.width, scaledBaseResolution.height) / largestDeviceDimension);
-  const croppedArea = group.screenResolution;
+  const croppedArea = {
+    width: group.screenResolution.width / scaleFactor,
+    height: group.screenResolution.height / scaleFactor
+  };
   const cropMarginX = (scaledBaseResolution.width - group.screenResolution.width) / 2;
   const cropMarginY = (scaledBaseResolution.height - group.screenResolution.height) / 2;
   const croppedAreaPercentage = (group.screenResolution.width * group.screenResolution.height)

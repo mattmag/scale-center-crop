@@ -3,6 +3,7 @@
 import type { ScaleResult } from "@data/results.ts";
 import { StripedPattern } from "@components/pictograms/patterns.tsx";
 import { usePictogramColors } from "./styles";
+import type { Size } from "@data/deviceTypes.ts";
 
 
 
@@ -26,6 +27,10 @@ export interface Rectangle {
 export function SummaryOverlay({ results, showAllResolutions = true }: SummaryOverlayProps) {
   const perimeter = getNormalizedPerimeter(results);
   const pictogramColors = usePictogramColors();
+  const minimumArea: Size = results.reduce((min, result) => ({
+    width: Math.min(min.width, result.croppedArea.width),
+    height: Math.min(min.height, result.croppedArea.height),
+  }), { width: Infinity, height: Infinity });
   return (
     <svg width="100%" viewBox="-162 -122 324 244">
       <defs>
@@ -58,6 +63,15 @@ export function SummaryOverlay({ results, showAllResolutions = true }: SummaryOv
             fill="none"
           />
         )}
+        <rect
+          x={minimumArea.width * -0.5}
+          y={minimumArea.height * -0.5}
+          width={minimumArea.width}
+          height={minimumArea.height}
+          stroke={pictogramColors.usableAreaOutline}
+          strokeWidth={1.5}
+          fill="none"
+        />
       </g>
     </svg>
   )

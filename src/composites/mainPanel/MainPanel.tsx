@@ -17,9 +17,9 @@ import { OverlayPanel } from "./OverlayPanel";
 
 export default function MainPanel() {
   const filteredDevices = useAtomValue(filteredDevicesAtom);
-  const [activeTab, setActiveTab] = useState<DeviceView>("individual");
-  const [activeGrouping, setActiveGrouping] = useState<DeviceGrouping>("devices");
-  const [deferredActiveGrouping, setDeferredActiveGrouping] = useState<DeviceGrouping>("devices");
+  const [activeTab, setActiveTab] = useState<DeviceView>("overlay");
+  const [activeGrouping, setActiveGrouping] = useState<DeviceGrouping>("screen-resolutions");
+  const [deferredActiveGrouping, setDeferredActiveGrouping] = useState<DeviceGrouping>(activeGrouping);
   
   const baseResolution = useMemo(() => ({ width: 320, height: 240 }), [])
   
@@ -38,7 +38,7 @@ export default function MainPanel() {
     });
   
   const activeResultsItems = deferredActiveGrouping === "devices" ? individualResults : screenResolutionResults;
-  const [ debouncedActiveResultsItems ] = useDebouncedValue(activeResultsItems, 1000, { leading: true })
+  const [ debouncedActiveResultsItems ] = useDebouncedValue(activeResultsItems, 500, { leading: true })
   const [, startTransition] = useTransition();
   
   const handleOnGroupingChanged = useCallback((newValue: DeviceGrouping) => {
@@ -53,7 +53,7 @@ export default function MainPanel() {
     <Tabs
       value={activeTab}
       onChange={newValue => setActiveTab((newValue ?? "individual") as DeviceView)}
-      keepMounted={false}
+      keepMounted={true}
     >
       <StickyTabsListWrapper>
         <TabListWithRightSide
@@ -74,11 +74,11 @@ export default function MainPanel() {
             </>
           }
         >
-            <Tabs.Tab value="individual" leftSection={<IconGridView size="md"/>}>
-              <Text size="md">Individual</Text>
-            </Tabs.Tab>
             <Tabs.Tab value="overlay" leftSection={<IconOverlayView size="md"/>}>
               <Text size="md">Overlay</Text>
+            </Tabs.Tab>
+            <Tabs.Tab value="individual" leftSection={<IconGridView size="md"/>}>
+              <Text size="md">Individual</Text>
             </Tabs.Tab>
         </TabListWithRightSide>
       </StickyTabsListWrapper>
