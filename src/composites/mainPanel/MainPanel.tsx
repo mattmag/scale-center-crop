@@ -5,7 +5,7 @@ import { useAtomValue } from "@zedux/react";
 import DeviceList from "@composites/mainPanel/DeviceList.tsx";
 import { Tabs, Text } from "@mantine/core";
 import { IconGridView, IconOverlayView } from "@theming/Icons.tsx";
-import { useCallback, useMemo, useState, useTransition } from "react";
+import { useCallback, useState, useTransition } from "react";
 import StickyTabsListWrapper from "@components/tabs/StickyTabsListWrapper.tsx";
 import TabListWithRightSide from "@components/tabs/TabListWithRightSide.tsx";
 import { DeviceListGroupingSelector } from "@composites/mainPanel/DeviceListGroupingSelector.tsx";
@@ -13,6 +13,7 @@ import type { DeviceGrouping, DeviceView } from "@composites/mainPanel/mainPanel
 import { useScaleResults } from "@composites/mainPanel/useScaleResults.tsx";
 import { useDebouncedValue } from "@mantine/hooks";
 import { OverlayPanel } from "./OverlayPanel";
+import { baseResolutionAtom } from "@data/baseResolution.ts";
 
 
 export default function MainPanel() {
@@ -21,7 +22,7 @@ export default function MainPanel() {
   const [activeGrouping, setActiveGrouping] = useState<DeviceGrouping>("screen-resolutions");
   const [deferredActiveGrouping, setDeferredActiveGrouping] = useState<DeviceGrouping>(activeGrouping);
   
-  const baseResolution = useMemo(() => ({ width: 320, height: 240 }), [])
+  const baseResolution = useAtomValue(baseResolutionAtom);
   
   const individualResults = useScaleResults(
     {

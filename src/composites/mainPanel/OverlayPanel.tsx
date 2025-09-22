@@ -22,7 +22,7 @@ export function OverlayPanel({ resultItems }: OverlayPanelProps) {
           onChange={(event) => setShowAll(event.currentTarget.checked)}
         />
       </Group>
-      <div style={{ height: "50vh" }}>
+      <div style={{ height: "50vh", alignItems: "start" }}>
         <SummaryOverlay results={results} showAllResolutions={showAll} />
       </div>
     </Stack>

@@ -4,6 +4,7 @@ import {
   ActionIcon,
   Flex,
   Group,
+  Stack,
   Title,
   Tooltip,
   useComputedColorScheme,
@@ -11,30 +12,35 @@ import {
 } from "@mantine/core";
 import { ThemeModeSelector } from "@composites/headerPanel/ThemeModeSelector.tsx";
 import { IconGithub } from "@theming/Icons.tsx";
+import { BaseResolutionInput } from "@composites/headerPanel/BaseResolutionInput.tsx";
 
 export function HeaderPanel() {
   const theme = useMantineTheme();
   const computedColorScheme = useComputedColorScheme();
+  
   return (
-    <Flex justify="space-between">
-      <Title>Scale Center Crop</Title>
-      <Group>
-        <Group gap="xs">
-          <Tooltip label="Respository">
-              <ActionIcon
-                component="a"
-                href="https://github.com/mattmag/scale-center-crop"
-                target="_blank"
-                variant="light"
-                radius="xl"
-                color={computedColorScheme === "light" ? theme.black : theme.white}
-              >
-                <IconGithub size={"sm"}/>
-              </ActionIcon>
-          </Tooltip>
+    <Stack>
+      <Flex justify="space-between">
+        <Title>Scale Center Crop</Title>
+        <Group>
+          <Group gap="xs">
+            <Tooltip label="Respository">
+                <ActionIcon
+                  component="a"
+                  href="https://github.com/mattmag/scale-center-crop"
+                  target="_blank"
+                  variant="light"
+                  radius="xl"
+                  color={computedColorScheme === "light" ? theme.black : theme.white}
+                >
+                  <IconGithub size={"sm"}/>
+                </ActionIcon>
+            </Tooltip>
+          </Group>
+          <ThemeModeSelector/>
         </Group>
-        <ThemeModeSelector/>
-      </Group>
-    </Flex>
+      </Flex>
+      <BaseResolutionInput/>
+    </Stack>
   )
 }

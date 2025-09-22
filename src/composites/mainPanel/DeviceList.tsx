@@ -62,9 +62,10 @@ function DeviceCard({
   return (
     <ItemWrapper>
       <Box w={"100%"} h={"100%"} p={"sm"} style={{ boxSizing: "border-box" }}>
-        <Stack gap={0}>
+        <Stack gap="xs">
           <SingleOverlay
-            aspectRatio={(320 / 240).toString()}
+            aspectRatio={Math.max(1, resultItem.result.baseResolution.width / resultItem.result.baseResolution.height).toString()}
+            // aspectRatio={"1 / 1"}
             screenResolution={resultItem.result.screenResolution}
             scaledBaseResolution={resultItem.result.scaledBaseResolution}
             drawingScale={resultItem.drawingScale}

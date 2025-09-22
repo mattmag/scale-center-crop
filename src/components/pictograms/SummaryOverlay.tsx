@@ -4,6 +4,8 @@ import type { ScaleResult } from "@data/results.ts";
 import { StripedPattern } from "@components/pictograms/patterns.tsx";
 import { usePictogramColors } from "./styles";
 import type { Size } from "@data/deviceTypes.ts";
+import { useAtomValue } from "@zedux/react";
+import { baseResolutionAtom } from "@data/baseResolution.ts";
 
 
 
@@ -24,6 +26,8 @@ export interface Rectangle {
   bottomRight: Point;
 }
 
+const SVG_PADDING = 2;
+
 export function SummaryOverlay({ results, showAllResolutions = true }: SummaryOverlayProps) {
   const perimeter = getNormalizedPerimeter(results);
   const pictogramColors = usePictogramColors();
@@ -31,17 +35,30 @@ export function SummaryOverlay({ results, showAllResolutions = true }: SummaryOv
     width: Math.min(min.width, result.croppedArea.width),
     height: Math.min(min.height, result.croppedArea.height),
   }), { width: Infinity, height: Infinity });
+  
+  const baseResolution = useAtomValue(baseResolutionAtom);
+  
   return (
-    <svg width="100%" viewBox="-162 -122 324 244">
+    <svg
+      width="100%"
+      height="100%"
+      viewBox={`-${(baseResolution.width / 2) + SVG_PADDING}
+        -${(baseResolution.height / 2) + SVG_PADDING}
+        ${baseResolution.width + (SVG_PADDING * 2)}
+        ${baseResolution.height + (SVG_PADDING * 2)}`
+      }
+      preserveAspectRatio="xMidYMin meet"
+    >
       <defs>
-        <StripedPattern id={"stripe"} color={pictogramColors.screenResolutionColor}/>
+        <StripedPattern id={"summary-overlay-stripe"} color={pictogramColors.scaledBaseResolutionColor}/>
       </defs>
-      <g transform="translate(2 2)">
+      <g transform={`translate(${SVG_PADDING} ${SVG_PADDING})`}>
         <rect
-          x={0} y={0}
-          width={320} height={240}
-          fill={"url(#stripe"}
-          transform={"translate(-160 -120)"}
+          x={0}
+          y={0}
+          width={baseResolution.width} height={baseResolution.height}
+          fill={"url(#summary-overlay-stripe"}
+          transform={`translate(-${baseResolution.width / 2} -${baseResolution.height / 2})`}
           vectorEffect="non-scaling-stroke"
           stroke={pictogramColors.screenResolutionColor}
           strokeWidth={1.5}

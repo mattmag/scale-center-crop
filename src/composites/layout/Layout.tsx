@@ -13,7 +13,7 @@ export default function Layout() {
       <AppShell
         withBorder={false}
         padding={"md"}
-        header={{ height: "9rem", offset: true }}
+        header={{ height: "10rem", offset: true }}
         navbar={{ width: "15%", breakpoint: "md", collapsed: { mobile: true, desktop: false }}}
         aside={{ width: "25%", breakpoint: "md", collapsed: { mobile: true, desktop: false } }}
       >
