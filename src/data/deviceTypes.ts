@@ -24,6 +24,7 @@ export interface BaseDevice {
 
 export interface GenericDevice extends BaseDevice {
   genericDeviceKey: DeviceKey;
+  friendlyName: string;
 }
 
 
@@ -85,5 +86,14 @@ export function getKey(device: Device) : DeviceKey {
     return `${device.modelInfo.brand}:${device.modelInfo.modelName}:${device.modelInfo.yearOfRelease}`
   } else {
     throw Error("Can not get key for an unknown device type");
+  }
+}
+export function getFriendlyName(device: Device): string {
+  if (isGenericDevice(device)) {
+    return device.friendlyName
+  } else if (isSpecificDevice(device)) {
+    return `${device.modelInfo.brand} ${device.modelInfo.modelName} (${device.modelInfo.yearOfRelease})`
+  } else {
+    throw Error("Can not get friendly name for an unknown device type");
   }
 }

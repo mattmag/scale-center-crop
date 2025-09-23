@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import { SummaryOverlay } from "@components/pictograms/SummaryOverlay.tsx";
 import type { ScaleResultItem } from "@composites/mainPanel/mainPanelTypes.ts";
-import { Group, Stack, Switch } from "@mantine/core";
+import { Center, Group, Stack, Switch } from "@mantine/core";
 
 export interface OverlayPanelProps {
   resultItems: ScaleResultItem[];
@@ -23,7 +23,13 @@ export function OverlayPanel({ resultItems }: OverlayPanelProps) {
         />
       </Group>
       <div style={{ height: "50vh", alignItems: "start" }}>
-        <SummaryOverlay results={results} showAllResolutions={showAll} />
+        {results.length > 0 ?
+          (
+            <SummaryOverlay results={results} showAllResolutions={showAll} />
+          ) : (
+            <Center>No results.</Center>
+          )
+        }
       </div>
     </Stack>
   )

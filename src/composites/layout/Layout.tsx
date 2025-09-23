@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-import { AppShell } from "@mantine/core";
+import { AppShell, ScrollArea } from "@mantine/core";
 import DeviceFilterPanel from "@composites/deviceFilterPanel/DeviceFilterPanel.tsx";
 import MainPanel from "@composites/mainPanel/MainPanel.tsx";
 import { HeaderPanel } from "@composites/headerPanel/HeaderPanel.tsx";
@@ -24,7 +24,9 @@ export default function Layout() {
           <DeviceFilterPanel/>
         </AppShell.Navbar>
         <AppShell.Aside p={"md"}>
-          <SidePanel/>
+          <ScrollArea>
+            <SidePanel/>
+          </ScrollArea>
         </AppShell.Aside>
         <AppShell.Main>
           <MainPanel/>

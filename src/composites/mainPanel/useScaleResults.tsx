@@ -84,8 +84,8 @@ function calculateResult(
     width: group.screenResolution.width / scaleFactor,
     height: group.screenResolution.height / scaleFactor
   };
-  const cropMarginX = (scaledBaseResolution.width - group.screenResolution.width) / 2;
-  const cropMarginY = (scaledBaseResolution.height - group.screenResolution.height) / 2;
+  const cropMarginX = (baseResolution.width - croppedArea.width) / 2;
+  const cropMarginY = (baseResolution.height - croppedArea.height) / 2;
   const croppedAreaPercentage = (group.screenResolution.width * group.screenResolution.height)
     / (scaledBaseResolution.width * scaledBaseResolution.height);
   const wasteAreaPercentage = 1 - croppedAreaPercentage;
